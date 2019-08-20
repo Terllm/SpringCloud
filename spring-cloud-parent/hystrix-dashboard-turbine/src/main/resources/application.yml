@@ -1,0 +1,31 @@
+spring:
+   mvc:
+       static-path-pattern: /*
+       view:
+           prefix: /pages/  
+           suffix: .html  
+   resources:
+      static-locations: classpath:/static/
+   application:
+       name: hystrix-dashboard-turbine
+       
+server:
+  port: 8004
+  context-path: /hystrixDashboardTurbine
+  
+eureka:
+  client:
+    serviceUrl:
+        defaultZone: http://localhost:8000/eureka/
+        
+feign:
+   hystrix:
+      enabled: true        
+        
+        
+        
+        
+        
+        
+        
+

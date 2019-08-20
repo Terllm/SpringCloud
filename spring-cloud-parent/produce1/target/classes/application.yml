@@ -1,0 +1,19 @@
+spring:
+   mvc:
+       static-path-pattern: /*
+       view:
+           prefix: /pages/  
+           suffix: .html  
+   resources:
+      static-locations:classpath:/static/
+   application:
+       name: spring-cloud-producer
+   
+server: 
+  port: 8003
+ # context-path: /produce
+eureka:
+  client:
+    serviceUrl:
+        defaultZone: http://localhost:8000/eureka/
+  

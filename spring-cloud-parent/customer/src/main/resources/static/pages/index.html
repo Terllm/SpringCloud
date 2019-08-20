@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+	<h1>hello world !!!</h1>
+	<script type="text/javascript">
+	$(function(){
+		
+		
+		setInterval(function(){
+			 $.ajax({
+	             type: "get",
+	             url: "hell/123",
+	             success: function(data){
+	                       console.log(data);
+	                      }
+	         });
+			
+		},100);
+		
+		
+	
+		
+		
+	})
+		
+	</script>
+</body>
+</html>

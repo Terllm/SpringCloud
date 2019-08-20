@@ -1,0 +1,31 @@
+spring:
+   mvc:
+       static-path-pattern: /*
+       view:
+           prefix: /pages/  
+           suffix: .html  
+   resources:
+      static-locations: classpath:/static/
+   application:
+       name: spring-cloud-costomer1
+       
+server:
+  port: 8005
+ # context-path: /costomer
+  
+eureka:
+  client:
+    serviceUrl:
+        defaultZone: http://localhost:8000/eureka/
+  #  eureka.instance.metadata-map.cluster=MAIN    
+feign:
+   hystrix:
+      enabled: true        
+        
+        
+        
+        
+        
+        
+        
+

@@ -1,0 +1,10 @@
+server:
+  port: 8011
+  
+spring:
+  application:
+    name: spring-cloud-config-client
+    
+management:
+   security:
+      enabled: false 
